@@ -1,0 +1,170 @@
+.banner
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  color: #fff
+  padding: 110px 0 140px
+  h1
+    font: 600 80px/1.12 $mainFont
+  &__desc
+    font: 400 25px/38px $mainFont
+    margin-bottom: 2em
+    max-width: 975px
+  &__form
+    display: flex
+    flex-direction: column
+    gap: 10px
+.search
+  &__main
+    display: flex
+    align-items: center
+    gap: 8px
+  &__map
+    padding: 13px 19px
+  &__search
+    position: relative
+    width: 100%
+    input
+      background: #EFEEEB
+      border-radius: 0 5px 5px 0
+      padding: 14px 35px 14px 17px
+      color: #403F3D
+      font: 400 12px/15px $mainFont
+    label
+      position: absolute
+      right: 18px
+      top: 16px
+    img
+      width: 12px
+      height: 12px
+  &__map
+    img
+      width: 12px
+      height: 12px
+  &__type
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    gap: 8px
+    &-item
+      position: relative
+      &:first-child label
+        border-radius: 10px 0 0 0
+      img
+        width: 12px
+        height: 12px
+    &-input
+      position: absolute
+      opacity: 0
+      max-width: 0
+      max-height: 0
+      &:checked + label
+        color: $black
+        img
+          filter: none
+    &-label
+      padding: 13px 16px
+      background: #fff
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      color: #A8A7A6
+      gap: 6px
+      font: 600 14px/17px $mainFont
+      cursor: pointer
+      img
+        filter: grayscale(.6)
+  &__label
+    position: absolute
+    display: inline-block
+    color: #A8A7A6
+    font: 400 12px/15px $mainFont
+    margin-bottom: 6px
+    top: -21px
+  &__filter
+    background: #fff
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    gap: 22px
+    padding: 35px 22px
+    border-radius: 0 0 5px 5px
+    img
+      width: 11px
+      height: 11px
+  &__item
+    position: relative
+  &__old-item, &__rooms-item
+    position: relative
+    input
+      opacity: 0
+      position: absolute
+      max-height: 0
+      max-width: 0
+      &:checked + label
+        background: $yellow
+        color: #fff
+        border-color: transparent
+    label
+      color: $black
+  &__wrap
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    gap: 8px
+  &__price input, &__square input
+    background: #EFEEEB
+    border-radius: 5px
+    padding: 5px 11px
+    width: 80px
+    color: $black
+    font: 400 12px/15px $mainFont
+  &__district
+    &-item
+      position: relative
+      input
+        background: #EFEEEB
+        border-radius: 5px
+        padding: 5px 25px 5px 11px
+        width: 87px
+        color: $black
+        font: 400 12px/15px $mainFont
+      label
+        position: absolute
+        top: 9px
+        right: 10px
+  &__all-filter
+    button
+      cursor: pointer
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      gap: 6px
+  &__submit
+    width: fit-content
+    padding: 12px 24px
+  &__filter
+    position: relative
+    &-list
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      gap: 8px
+      position: absolute
+      left: 22px
+      bottom: 12px
+    &-item
+      cursor: pointer
+      color: #A8A7A6
+      font: 400 12px/15px $mainFont
+      position: relative
+      display: flex
+      align-items: center
+      gap: 3px
+      &.reset
+        color: $yellow
+      &:after
+        content: ''
+        width: 8px
+        height: 8px
+        background: url("../img/cross.png") center no-repeat

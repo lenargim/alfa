@@ -1,0 +1,79 @@
+.magazine
+  padding: 45px 0 80px
+  &__title
+    display: flex
+    align-items: center
+    justify-content: space-between
+    h3
+      margin-bottom: 0
+    .button
+      color: $black
+  &__wrap
+    margin-top: 30px
+    display: flex
+    gap: 40px
+  &__first
+    width: calc(50% - 40px)
+  &__img
+    border-radius: 5px
+    position: relative
+    overflow: hidden
+    width: 100%
+    aspect-ratio: 560/330
+  &__date
+    position: absolute
+    bottom: 0
+    left: 0
+    border-radius: 0 5px
+    background: $yellow
+    color: #fff
+    padding: 6px 12px
+    span:first-child
+      display: block
+      font: 400 13px/16px $mainFont
+    span:last-child
+      display: flex
+      align-items: center
+      gap: 5px
+      font: 400 15px/18px $mainFont
+      &:before
+        content: ''
+        display: inline-block
+        background: #fff
+        width: 100%
+        height: 1px
+  &__name
+    margin-top: 1em
+    font: 600 25px/30px $mainFont
+  &__desc
+    margin-top: 1em
+    font: 400 18px/2 $mainFont
+
+  &__list
+    display: grid
+    grid-template-columns: 1fr
+    gap: 25px
+    width: 50%
+    &-item
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      gap: 30px
+    &-img
+      overflow: hidden
+      position: relative
+      border-radius: 5px
+      width: 100%
+      max-width: 177px
+      aspect-ratio: 177/109
+      img
+        height: 100%
+        object-fit: cover
+    &-name
+      font: 600 25px/30px $mainFont
+    &-desc
+      font: 400 18px/32px $mainFont
+      a
+        font-weight: 600
+        color: $yellow
+        text-decoration: underline

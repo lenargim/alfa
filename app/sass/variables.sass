@@ -1,0 +1,17 @@
+$black: #3D3E40
+$brown: #BB8847
+$yellow: #DAAA57
+
+$mainFont: "Proxima Nova", sans-serif
+
+@mixin max($breakpoint)
+  @media screen and (max-width: $breakpoint + 'px')
+    @content
+
+@mixin min($breakpoint)
+  @media screen and (min-width: $breakpoint + 'px')
+    @content
+
+@mixin between($min, $max)
+  @media screen and (min-width: $min + 'px') and (max-width: $max + 'px')
+    @content

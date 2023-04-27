@@ -1,0 +1,40 @@
+.about
+  padding: 80px 0
+  &__wrap
+    display: flex
+    gap: 50px
+  &__graphic
+    width: calc(50% - 25px)
+  &__img
+    border-radius: 5px 5px 0 0
+    margin-bottom: 10px
+  &__bottom
+    position: relative
+    color: #fff
+    span
+      position: absolute
+      font: 600 23px/28px $mainFont
+      left: 30%
+      top: 50%
+      transform: translate(0, -50%)
+  &__text
+    width: 50%
+  h3
+    position: relative
+    width: 80%
+    display: inline-block
+    &::after
+      content: ''
+      position: relative
+      left: 10px
+      bottom: 10px
+      width: 130px
+      height: 3px
+      display: inline-block
+      background-color: $yellow
+
+  &__desc
+    margin-top: 30px
+    font: 400 18px/35px $mainFont
+  &__link
+    margin-top: 30px

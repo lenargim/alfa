@@ -1,0 +1,83 @@
+.wrap
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  gap: 60px
+
+.item
+  position: relative
+  .link
+    display: block
+    position: relative
+    overflow: hidden
+    border-radius: 5px 5px 0 0
+    cursor: pointer
+  .img
+    width: 100%
+    aspect-ratio: 360/307
+  .arrow
+    background: #fff
+    border-radius: 50%
+    padding: 9px
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    right: 27px
+    bottom: 19px
+    z-index: 1
+    img
+      width: 12px
+      height: 12px
+  .title
+    color: $black
+    font: 600 25px/30px $mainFont
+  .desc
+    color: #A8A7A6
+    font: 400 16px/24px $mainFont
+  .table
+    padding-top: 1em
+    .row
+      display: flex
+      align-items: flex-end
+      justify-content: space-between
+      overflow: hidden
+      span
+        font: 400 16px/30px $mainFont
+        &:first-child
+          color: #3D3E40
+          position: relative
+          &:after
+            content: ''
+            position: absolute
+            width: 300px
+            height: 1px
+            overflow: hidden
+            bottom: 10px
+            left: calc(100% + 10px)
+            background-image: linear-gradient(to right, $black 0%, $black 50%, transparent 50%)
+            background-size: 7px 1px
+            background-repeat: repeat-x
+        &:last-child
+          color: #292E32
+          font-weight: 600
+          position: relative
+          background: #fff
+          padding-left: 10px
+  .info
+    padding: 20px 25px 20px
+    box-shadow: 0 0 5px #E3E1DF
+    border-radius: 0 0 5px 5px
+  .length
+    padding-top: 1em
+  .marks
+    display: flex
+    flex-wrap: wrap
+    gap: 12px
+  .mark
+    background-color: #F0EFED
+    font: 400 14px/17px $mainFont
+    padding: 7px 16px
+    border-radius: 5px
+    margin-top: 20px
+.all
+  margin: 46px auto 0
