@@ -6,16 +6,23 @@
   padding: 110px 0 140px
   @include between(768, 1280)
     padding: 100px 0
+  @include max(767)
+    padding: 50px 0
   h1
     font: 600 80px/1.12 $mainFont
     @include between(768, 1280)
       font-size: 68px
+    @include max(767)
+      font-size: 40px
   &__desc
     font: 400 25px/38px $mainFont
     margin-bottom: 2em
     max-width: 975px
     @include between(768, 1280)
       font: 400 22px/30px $mainFont
+    @include max(767)
+      font: 400 18px/25px $mainFont
+      margin: 1em 0
   &__form
     display: flex
     flex-direction: column
@@ -105,6 +112,10 @@
     @include between(768, 1280)
       flex-wrap: wrap
       gap: 30px 15px
+    @include max(767)
+      flex-direction: column
+      align-items: stretch
+      gap: 30px 15px
     img
       width: 11px
       height: 11px
@@ -128,6 +139,10 @@
     align-items: center
     justify-content: flex-start
     gap: 8px
+    @include max(767)
+      width: 100%
+      &>*
+        flex-grow: 1
 
   &__price input, &__square input
     background: #EFEEEB
@@ -136,6 +151,8 @@
     width: 80px
     color: $black
     font: 400 12px/15px $mainFont
+    @include max(767)
+      width: 100%
   &__district
     &-item
       position: relative
@@ -146,6 +163,8 @@
         width: 87px
         color: $black
         font: 400 12px/15px $mainFont
+        @include max(767)
+          width: 100%
       label
         position: absolute
         top: 9px
@@ -160,6 +179,8 @@
   &__submit
     width: fit-content
     padding: 12px 24px
+    @include max(767)
+      width: 100%
   &__filter
     &-list
       display: flex

@@ -1,8 +1,6 @@
 .reviews
   padding: 40px 0 80px
-  background-position: center
-  background-size: cover
-  background-repeat: no-repeat
+  background: url('../img/reviews-bg.png') center/cover no-repeat
   h3
     text-align: center
   &__item
@@ -68,6 +66,9 @@
     z-index: 3
     background: $yellow
     cursor: pointer
+    transition: all .2s ease
+    &:hover
+      background: $brown
     @include max(1279)
       display: none
     img
@@ -75,7 +76,13 @@
       height: 14px
     &.reviews-next
       left: calc(100% + 25px)
+      @include max(1365)
+        left: calc(100% + 10px)
     &.reviews-prev
       right: calc(100% + 25px)
       img
         transform: rotate(180deg)
+      @include max(1365)
+        right: calc(100% + 10px)
+    &.swiper-button-disabled
+      filter: grayscale(.8)

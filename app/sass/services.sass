@@ -1,20 +1,25 @@
 .services
-  background-position: center
-  background-repeat: no-repeat
-  background-size: cover
   padding: 40px 0 80px
+  background: url('../img/services-bg.png') center/cover no-repeat
+  h3
+    @include max(1023)
+      text-align: center
   &__desc
     font: 400 20px/1.5 $mainFont
     margin-bottom: 1em
     @include min(1024)
       max-width: 90%
-
+    @include max(767)
+      font-size: 16px
   &__wrap
     display: grid
     grid-template-columns: repeat(3, 1fr)
     gap: 60px
-    @include between(768, 1280)
+    @include max(1279)
       gap: 15px
+    @include max(767)
+      grid-template-columns: 1fr
+      gap: 30px
   &__item
     position: relative
   &__img

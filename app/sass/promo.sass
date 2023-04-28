@@ -1,9 +1,10 @@
 .promo
-  background-size: cover
-  background-repeat: no-repeat
-  background-position: center
   padding: 65px 0 75px
   color: #fff
+  background: url('../img/promo.jpg') center/cover no-repeat
+  @include max(767)
+    padding: 50px 0
+    text-align: center
   h3
     @include min(1280)
       max-width: 60%
@@ -13,5 +14,8 @@
     justify-content: flex-start
     gap: 35px
     margin-top: 30px
+    @include max(767)
+      flex-direction: column
   &__text
-    max-width: 220px
+    @include min(768)
+      max-width: 220px

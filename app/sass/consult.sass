@@ -1,9 +1,9 @@
 .consult
   padding: 65px 0 75px
-  background-repeat: no-repeat
-  background-size: cover
-  background-position: center
   color: #fff
+  background: url('../img/consult-bg.jpg') center/cover no-repeat
+  @include max(767)
+    padding: 50px 0
   h3
     text-align: center
   &__desc
@@ -17,6 +17,9 @@
     gap: 30px
     @include between(768, 1024)
       gap: 15px
+    @include max(767)
+      flex-direction: column
+      gap: 15px
   &__after
     margin-top: 30px
     text-align: center
@@ -29,6 +32,8 @@
 .form
   &__row
     width: 260px
+    @include max(767)
+      width: 100%
   &__input
     width: 100%
     padding: 15px 20px

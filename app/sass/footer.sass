@@ -3,28 +3,43 @@
   color: #A8A7A6
   position: relative
   background: url("../img/footer.png") #2F2E29 right bottom no-repeat
+  @include max(767)
+    padding: 50px 0
   &__wrap
     display: grid
     grid-template-columns: repeat(3, 1fr)
     gap: 190px
     @include between(768, 1280)
       gap: 30px
+    @include max(767)
+      grid-template-columns: 1fr
+      gap: 20px
   &__logo
     aspect-ratio: 1/1
     max-width: 226px
     @include max(1279)
       max-width: 128px
+    @include max(767)
+      margin: 0 auto
   &__desc
     font: 400 12px/18px $mainFont
+    @include max(767)
+      text-align: center
   &__col
     font: 400 15px/25px $mainFont
     @include min(1280)
       margin-top: 40px
+    @include max(767)
+      text-align: center
     &-name
       color: #fff
+      @include max(767)
+        margin-bottom: 15px
     &-list
       display: flex
       flex-direction: column
+      @include max(767)
+        gap: 10px
       a
         color: #A8A7A6
         transition: color .2s ease

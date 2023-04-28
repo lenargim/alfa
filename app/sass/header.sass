@@ -3,19 +3,23 @@
     display: flex
     width: 100%
     gap: 30px
+    @include max(767)
+      gap: 15px
   &__logo
     max-width: 140px
     flex-shrink: 0
     @include max(1280)
       max-width: 87px
+    @include max(767)
+      max-width: 60px
   &__info
     flex-grow: 2
     display: flex
     flex-direction: column
     gap: 17px
   &__svg
-    width: 10px
-    height: 10px
+    width: 12px
+    height: 12px
   &__top
     width: 100%
     display: flex
@@ -24,6 +28,8 @@
     position: relative
     padding: 13px 0 13px 34px
     gap: 18px
+    @include max(767)
+      padding: 15px 0 15px 20px
     &:before, &:after
       content: ''
       position: absolute
@@ -40,13 +46,16 @@
       left: 99%
       width: 100vw
   &__city
-    min-width: 200px
+    @include min(768)
+      min-width: 200px
     .current
       display: flex
       align-items: center
       justify-content: flex-start
       gap: 9px
       font: 600 17px/21px $mainFont
+      @include max(767)
+        font: 400 14px/17px $mainFont
     span
       color: #fff
   &__phone
@@ -63,6 +72,8 @@
     align-items: center
     gap: 30px
     justify-content: flex-end
+    @include max(767)
+      gap: 20px
   &__nav
     display: flex
     align-items: center

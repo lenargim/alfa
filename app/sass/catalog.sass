@@ -9,12 +9,21 @@
     @include between(768, 1280)
       gap: 15px
     @include max(1023)
-      grid-template-columns: 1fr
-      gap: 45px
+      gap: 20px
+      overflow-x: auto
+      position: relative
+      left: -30px
+      width: calc(100% + 60px)
+      padding: 0 30px 5px
+      -ms-overflow-style: none
+      scrollbar-width: none
+      &::-webkit-scrollbar
+        display: none
   &__item
-    @include between(768, 1024)
-      max-width: 75vw
-      margin: 0 auto
+    @include max(1023)
+      min-width: 360px
+    @include max(767)
+      min-width: 300px
 
   &__link
     border-radius: 5px

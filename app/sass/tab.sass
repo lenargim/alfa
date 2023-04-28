@@ -1,6 +1,6 @@
 .tab
   padding: 45px 0 85px
-  @include between(768, 1280)
+  @include max(1279)
     padding: 45px 0
   h3
     text-align: center
@@ -16,6 +16,13 @@
     width: fit-content
     margin: 60px auto 0
     gap: 50px
+    @include max(767)
+      margin: 30px auto 0
+      flex-direction: column
+      gap: 15px
+      align-items: stretch
+      width: 100%
+      text-align: center
     &:after
       content: ''
       position: absolute
