@@ -1,5 +1,7 @@
 .tab
   padding: 45px 0 85px
+  @include between(768, 1280)
+    padding: 45px 0
   h3
     text-align: center
   &__desc
@@ -41,6 +43,15 @@
     margin-top: 48px
   &__part
     display: none
+    @include max(1023)
+      gap: 20px
+      overflow-x: auto
+      position: relative
+      left: -30px
+      width: calc(100% + 30px*2)
+      padding: 0 30px 5px
+      .item
+        min-width: 300px
     &.active
       display: flex
   &__all

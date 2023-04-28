@@ -26,12 +26,12 @@
                             <span>Тюмень</span>
                         </div>
                     </div>
-                    <a href="tel:73452948228" class="header__phone">
+                    <a href="tel:73452948228" class="header__phone desktop">
                         <img src="/img/phone.png" alt="phone" class="header__svg">
                         <span>+7 (3452) 94-82-28</span>
                     </a>
-                    <button class="button yellow">Перезвонить вам?</button>
-                    <a href="#" class="button transparent">+ Разместить объявление</a>
+                    <button class="button yellow desktop">Перезвонить вам?</button>
+                    <a href="#" class="button transparent desktop">+ Разместить объявление</a>
                     <div class="header__right">
                         <a href="#" class="">
                             <img src="/img/favorite.png" alt="favorite" class="header__svg">
@@ -39,9 +39,12 @@
                         <a href="#" class="">
                             <img src="/img/user.png" alt="user" class="header__svg">
                         </a>
+                        <button class="burger mobile toggle-burger">
+                            <img src="/img/burger.png" alt="">
+                        </button>
                     </div>
                 </div>
-                <div class="header__nav">
+                <div class="header__nav desktop">
                     <a href="#" class="header__link">О компании</a>
                     <a href="#" class="header__link">Услуги</a>
                     <a href="#" class="header__link">Журнал</a>
@@ -54,6 +57,26 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="mobile-menu">
+        <button class="mobile-menu__close toggle-burger">&#215;</button>
+        <nav class="mobile-menu__list">
+            <a href="#" class="mobile-menu__link">О компании</a>
+            <a href="#" class="mobile-menu__link">Услуги</a>
+            <a href="#" class="mobile-menu__link">Журнал</a>
+            <a href="#" class="mobile-menu__link">Квартиры</a>
+            <a href="#" class="mobile-menu__link">Новостройки</a>
+            <a href="#" class="mobile-menu__link">Вторичное</a>
+            <a href="#" class="mobile-menu__link">Загородная</a>
+            <a href="#" class="mobile-menu__link">Команда</a>
+            <a href="#" class="button yellow">Зарубежная</a>
+            <button class="button yellow">Перезвонить вам?</button>
+            <a href="#" class="button transparent">+ Разместить объявление</a>
+            <a href="tel:73452948228" class="header__phone">
+                <img src="/img/phone.png" alt="phone" class="header__svg">
+                <span>+7 (3452) 94-82-28</span>
+            </a>
+        </nav>
     </div>
 </div>
 <section class="banner" style="background-image: url('/img/banner.jpg')">
@@ -239,7 +262,7 @@
         </div>
     </div>
 </section>
-<section class="UAE" style="background-image: url('/img/UAE.jpg')">
+<section class="UAE">
     <div class="container">
         <h3>Покупка недвижимости в ОАЭ</h3>
         <div class="UAE__desc">Обладая глубокими знаниями о рынке недвижимости, наша команда посоветует вам лучшую
@@ -379,7 +402,7 @@
             </div>
         </div>
         <div class="tab__wrap">
-            <div class="tab__part active wrap" data-type="tab-1">
+            <div class="tab__part no-scroll active wrap" data-type="tab-1">
                 <div class="item">
                     <a href="#" class="link">
                         <img class="img" src="/img/tab1.jpg" alt="">
@@ -441,7 +464,7 @@
                     </div>
                 </div>
             </div>
-            <div class="tab__part wrap" data-type="tab-2">
+            <div class="tab__part no-scroll wrap" data-type="tab-2">
                 <div class="item">
                     <a href="#" class="link">
                         <img class="img" src="/img/tab1.jpg" alt="">
@@ -503,7 +526,7 @@
                     </div>
                 </div>
             </div>
-            <div class="tab__part wrap" data-type="tab-3">
+            <div class="tab__part no-scroll wrap" data-type="tab-3">
                 <div class="item">
                     <a href="#" class="link">
                         <img class="img" src="/img/tab1.jpg" alt="">
@@ -565,7 +588,7 @@
                     </div>
                 </div>
             </div>
-            <div class="tab__part wrap" data-type="tab-4">
+            <div class="tab__part no-scroll wrap" data-type="tab-4">
                 <div class="item">
                     <a href="#" class="link">
                         <img class="img" src="/img/tab1.jpg" alt="">

@@ -23,6 +23,7 @@ body
   position: relative
   color: $black
   min-height: 100vh
+  overflow: hidden
 html
   height: 100%
 
@@ -49,8 +50,8 @@ button
   padding: 0 15px
   margin: 0 auto
   max-width: 1230px
-  @include between(1024, 1366)
-    padding: 0 52px
+  @include between(768, 1280)
+    padding: 0 30px
   @include max(767)
     padding: 0 20px
 .container_outer
@@ -124,6 +125,9 @@ h1, h2, h3, h4, p, ul
 h3
   font: 600 40px/1.25 $mainFont
   margin-bottom: 20px
+  @include between(768, 1280)
+    font-size: 35px
+    margin-bottom: 15px
 
 
 h4
@@ -238,3 +242,18 @@ svg
   width: 0
   height: 0
   transition: all .2s ease
+
+
+.desktop
+  @include max(1279)
+    display: none !important
+
+.mobile
+  @include min(1280)
+    display: none !important
+
+.no-scroll
+  -ms-overflow-style: none
+  scrollbar-width: none
+  &::-webkit-scrollbar
+    display: none

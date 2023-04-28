@@ -4,12 +4,18 @@
   background-repeat: no-repeat
   color: #fff
   padding: 110px 0 140px
+  @include between(768, 1280)
+    padding: 100px 0
   h1
     font: 600 80px/1.12 $mainFont
+    @include between(768, 1280)
+      font-size: 68px
   &__desc
     font: 400 25px/38px $mainFont
     margin-bottom: 2em
     max-width: 975px
+    @include between(768, 1280)
+      font: 400 22px/30px $mainFont
   &__form
     display: flex
     flex-direction: column
@@ -19,6 +25,8 @@
     display: flex
     align-items: center
     gap: 8px
+    @include max(1023)
+      flex-wrap: wrap
   &__map
     padding: 13px 19px
   &__search
@@ -46,8 +54,12 @@
     align-items: center
     justify-content: flex-start
     gap: 8px
+    @include max(1023)
+      width: 100%
     &-item
       position: relative
+      @include max(1023)
+        flex-grow: 1
       &:first-child label
         border-radius: 10px 0 0 0
       img
@@ -82,6 +94,7 @@
     margin-bottom: 6px
     top: -21px
   &__filter
+    position: relative
     background: #fff
     display: flex
     justify-content: flex-start
@@ -89,6 +102,9 @@
     gap: 22px
     padding: 35px 22px
     border-radius: 0 0 5px 5px
+    @include between(768, 1280)
+      flex-wrap: wrap
+      gap: 30px 15px
     img
       width: 11px
       height: 11px
@@ -112,6 +128,7 @@
     align-items: center
     justify-content: flex-start
     gap: 8px
+
   &__price input, &__square input
     background: #EFEEEB
     border-radius: 5px
@@ -144,7 +161,6 @@
     width: fit-content
     padding: 12px 24px
   &__filter
-    position: relative
     &-list
       display: flex
       align-items: center

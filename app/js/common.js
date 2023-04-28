@@ -9,8 +9,6 @@ $(document).ready(function () {
   })
 
   const mainSlider = new Swiper('.reviews__slider', {
-    slidesPerView: 2,
-    spaceBetween: 60,
     draggable: false,
     preloadImages: false,
     watchSlidesProgress: true,
@@ -23,10 +21,26 @@ $(document).ready(function () {
       type: 'bullets',
       currentClass: 'active',
     },
-    navigation: {
-      nextEl: '.reviews-next',
-      prevEl: '.reviews-prev',
-    },
+
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        navigation: false
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      1280: {
+        slidesPerView: 2,
+        spaceBetween: 60,
+        navigation: {
+          nextEl: '.reviews-next',
+          prevEl: '.reviews-prev',
+        },
+      }
+    }
   });
 
 
@@ -34,11 +48,13 @@ $(document).ready(function () {
     const text = $(this).text();
     const length = text.length;
     const max = +$(this).data('max')
-    console.log( max)
     if (length > max) {
       const trimmedText = text.substring(0, max);
-
       $(this).text(`${trimmedText}...`)
     }
+  })
+
+  $(".toggle-burger").on('click', function () {
+    $('.mobile-menu').toggleClass('active')
   })
 })

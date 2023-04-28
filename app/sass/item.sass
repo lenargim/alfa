@@ -2,9 +2,18 @@
   display: grid
   grid-template-columns: repeat(3, 1fr)
   gap: 60px
+  @include between(1024, 1280)
+    gap: 15px
+  @include between(768, 1024)
+    grid-template-columns: 1fr
+    gap: 45px
+
 
 .item
   position: relative
+  @include between(768, 1024)
+    max-width: 75vw
+    margin: 0 auto
   .link
     display: block
     position: relative

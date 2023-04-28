@@ -5,12 +5,16 @@
   padding: 40px 0 80px
   &__desc
     font: 400 20px/1.5 $mainFont
-    max-width: 90%
     margin-bottom: 1em
+    @include min(1024)
+      max-width: 90%
+
   &__wrap
     display: grid
     grid-template-columns: repeat(3, 1fr)
     gap: 60px
+    @include between(768, 1280)
+      gap: 15px
   &__item
     position: relative
   &__img

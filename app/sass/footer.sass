@@ -1,22 +1,25 @@
 .footer
   padding: 60px 0 100px
-  background-color: #2F2E29
   color: #A8A7A6
   position: relative
-  background-repeat: no-repeat
-  background-position: right bottom
+  background: url("../img/footer.png") #2F2E29 right bottom no-repeat
   &__wrap
     display: grid
     grid-template-columns: repeat(3, 1fr)
     gap: 190px
+    @include between(768, 1280)
+      gap: 30px
   &__logo
     aspect-ratio: 1/1
     max-width: 226px
+    @include max(1279)
+      max-width: 128px
   &__desc
     font: 400 12px/18px $mainFont
   &__col
-    margin-top: 40px
     font: 400 15px/25px $mainFont
+    @include min(1280)
+      margin-top: 40px
     &-name
       color: #fff
     &-list

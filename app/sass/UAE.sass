@@ -1,9 +1,12 @@
 .UAE
   width: 100%
-  background-size: 100%
-  background-repeat: no-repeat
-  background-position: top center
   padding: 70px 0
+  @include min(1280)
+    background: url("../img/UAE.jpg") top center/100% no-repeat
+  @include between(1024, 1280)
+    background: url("../img/UAE.jpg") top center/100% 50vh no-repeat
+  @include between(768, 1024)
+    background: url("../img/UAE.jpg") top center/100% 30vh no-repeat
   h3
     text-align: center
     color: #fff

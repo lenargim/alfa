@@ -6,6 +6,16 @@
     display: grid
     grid-template-columns: repeat(3, 1fr)
     gap: 60px
+    @include between(768, 1280)
+      gap: 15px
+    @include max(1023)
+      grid-template-columns: 1fr
+      gap: 45px
+  &__item
+    @include between(768, 1024)
+      max-width: 75vw
+      margin: 0 auto
+
   &__link
     border-radius: 5px
     overflow: hidden
