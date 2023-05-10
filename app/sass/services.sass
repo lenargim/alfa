@@ -14,14 +14,12 @@
   &__wrap
     display: grid
     grid-template-columns: repeat(3, 1fr)
-    gap: 60px
+    gap: 50px 60px
     @include max(1279)
       gap: 15px
     @include max(767)
       grid-template-columns: 1fr
       gap: 30px
-  &__item
-    position: relative
   &__img
     position: relative
     margin-bottom: 16px
@@ -29,3 +27,117 @@
     font: 600 25px/1.2 $mainFont
   &__all
     margin-top: 30px
+
+.services-page
+  padding: 50px 0 0
+  &__desc
+    margin: 1em 0
+    font: 400 18px/2 $mainFont
+  &__price
+    padding: 50px 0
+    margin: 50px 0
+    background: url('../img/reviews-bg.png') center/cover no-repeat
+    text-align: center
+    &-wrap
+      display: flex
+      align-items: flex-start
+      justify-content: center
+      gap: 70px
+      margin-top: 30px
+    &-item
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 171px
+      gap: 7px
+      &:before
+        content: ''
+        width: 53px
+        height: 53px
+        background: url("../img/check.png") center/contain no-repeat
+  &__menu
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    padding-bottom: 15px
+    position: relative
+    width: fit-content
+    gap: 50px
+    @include max(767)
+      margin: 30px auto 0
+      flex-direction: column
+      gap: 15px
+      align-items: stretch
+      width: 100%
+      text-align: center
+    &:after
+      content: ''
+      position: absolute
+      height: 1px
+      overflow: hidden
+      bottom: 0
+      left: 0
+      right: 0
+      background-image: linear-gradient(to right, $black 0%, $black 50%, transparent 50%)
+      background-size: 7px 1px
+      background-repeat: repeat-x
+    &-item
+      position: relative
+      input
+        position: absolute
+        max-width: 0
+        max-height: 0
+        opacity: 0
+        &:checked + label
+          color: $yellow
+      label
+        font: 400 16px/19px $mainFont
+        cursor: pointer
+  &__tab
+    &-wrap
+      margin: 40px 0 85px
+    &-part
+      display: none
+      grid-template-columns: repeat(3, 1fr)
+      gap: 20px 30px
+      &.active
+        display: grid
+    &-item
+      padding: 20px
+      background: #fff
+      box-shadow: 0 0 5px #E3E1DF
+      border-radius: 0 0 5px 5px
+    &-name
+      font: 600 18px/24px $mainFont
+    &-desc
+      color: #787773
+    .button
+      align-self: center
+  &__cards
+    background: url('../img/services-bg.png') center/cover no-repeat
+    padding: 50px 0
+  &__cards
+    h2, &-desc
+      text-align: center
+    &-desc
+      font: 400 20px/30px $mainFont
+    &-wrap
+      margin-top: 30px
+      display: grid
+      grid-template-columns: repeat(3, 1fr)
+      gap: 50px
+      align-items: flex-start
+    &-item
+      background: #fff
+      box-shadow: 0 0 5px #E3E1DF
+      border-radius: 0 0 5px 5px
+      padding: 20px 35px 20px 20px
+      display: grid
+      grid-template-columns: 1fr
+      gap: 1em
+    &-title
+      font: 600 25px/30px $mainFont
+    li
+      line-height: 26px
+      &::marker
+        color: $yellow

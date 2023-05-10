@@ -1,33 +1,8 @@
-.banner
-  background-size: cover
-  background-position: center
-  background-repeat: no-repeat
-  color: #fff
-  padding: 110px 0 140px
-  @include between(768, 1280)
-    padding: 100px 0
-  @include max(767)
-    padding: 50px 0
-  h1
-    font: 600 80px/1.12 $mainFont
-    @include between(768, 1280)
-      font-size: 68px
-    @include max(767)
-      font-size: 40px
-  &__desc
-    font: 400 25px/38px $mainFont
-    margin-bottom: 2em
-    max-width: 975px
-    @include between(768, 1280)
-      font: 400 22px/30px $mainFont
-    @include max(767)
-      font: 400 18px/25px $mainFont
-      margin: 1em 0
-  &__form
-    display: flex
-    flex-direction: column
-    gap: 10px
 .search
+  display: flex
+  flex-direction: column
+  gap: 10px
+  max-width: 1130px
   &__main
     display: flex
     align-items: center

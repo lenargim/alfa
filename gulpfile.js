@@ -1,81 +1,72 @@
-var gulp         = require('gulp'),
-		sass         = require('gulp-sass')(require('sass')),
-		autoprefixer = require('gulp-autoprefixer'),
-		cleanCSS     = require('gulp-clean-css'),
-		rename       = require('gulp-rename'),
-		browserSync  = require('browser-sync').create(),
-		concat       = require('gulp-concat'),
-		uglify       = require('gulp-uglify-es').default;
+var gulp = require('gulp'),
+  connect = require('gulp-connect-php'),
+  sass = require('gulp-sass')(require('sass')),
+  autoprefixer = require('gulp-autoprefixer'),
+  cleanCSS = require('gulp-clean-css'),
+  rename = require('gulp-rename'),
+  browserSync = require('browser-sync'),
+  concat = require('gulp-concat'),
+  uglify = require('gulp-uglify-es').default;
 
-gulp.task('browser-sync', function() {
-	browserSync.init({
-		server: {
-			baseDir: 'app'
-		},
-		notify: false,
-		// online: false, // Work offline without internet connection
-		// tunnel: true, tunnel: 'projectname', // Demonstration page: http://projectname.localtunnel.me
-	})
+// gulp.task('browser-sync', function() {
+// 	browserSync.init({
+// 		server: {
+// 			baseDir: 'app'
+// 		},
+// 		notify: false,
+// 		// online: false, // Work offline without internet connection
+// 		// tunnel: true, tunnel: 'projectname', // Demonstration page: http://projectname.localtunnel.me
+// 	})
+// });
+
+gulp.task('connect-sync', function () {
+  connect.server({
+    base: 'app'
+  }, function () {
+    browserSync({
+      proxy: '127.0.0.1:8000',
+      // server: {
+      //   baseDir: 'app'
+      // },
+    });
+  });
+
+  gulp.watch('**/*.php').on('change', function () {
+    browserSync.reload();
+  });
 });
-function bsReload(done) { browserSync.reload(); done() };
-
-// gulp.task('styles', function () {
-// 	return gulp.src('sass/**/*.sass')
-// 	.pipe(sass({
-// 		outputStyle: 'expanded',
-// 	}, {allowEmpty: true}).on('error', sass.logError))
-// 	.pipe(rename({suffix: '.min', prefix : ''}))
-// 	.pipe(autoprefixer({
-// 		// grid: true, // Optional. Enable CSS Grid
-// 		overrideBrowserslist: ['last 10 versions']
-// 	}))
-// 	.pipe(cleanCSS())
-// 	.pipe(gulp.dest('app/css'))
-// 	.pipe(browserSync.stream());
-// });
-
-// gulp.task('scripts', function() {
-// 	return gulp.src([
-// 		// 'app/libs/jquery/jquery-1.11.2.min.js',
-// 		])
-// 		.pipe(concat('libs.js'))
-// 		.pipe(uglify()) //Minify libs.js
-// 		.pipe(gulp.dest('app/js/'))
-// 		.pipe(browserSync.reload({ stream: true }));
-// });
 
 
 gulp.task('styles', function () {
-	return gulp.src('app/sass/styles.sass')
-		.pipe(sass({
-		}, {allowEmpty: true}).on('error', sass.logError))
-		.pipe(rename({suffix: '.min', prefix : ''}))
-		.pipe(autoprefixer({
-			overrideBrowserslist: ['last 10 versions']
-		}))
-		.pipe(cleanCSS())
-		.pipe(gulp.dest('app/css'))
-		.pipe(browserSync.stream());
+  return gulp.src('app/sass/styles.sass')
+    .pipe(sass({}, {allowEmpty: true}).on('error', sass.logError))
+    .pipe(rename({suffix: '.min', prefix: ''}))
+    .pipe(autoprefixer({
+      overrideBrowserslist: ['last 10 versions']
+    }))
+    .pipe(cleanCSS())
+    .pipe(gulp.dest('app/css'))
+    .pipe(browserSync.stream());
 });
 
 
-gulp.task('scripts', function() {
-	return gulp.src('app/libs/**/*.js', {allowEmpty: true})
-		.pipe(concat('libs.js'))
-		.pipe(uglify())
-		.pipe(gulp.dest('app/js/'))
-		.pipe(browserSync.reload({ stream: true }));
+gulp.task('scripts', function () {
+  return gulp.src('app/libs/**/*.js', {allowEmpty: true})
+    .pipe(concat('libs.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('app/js/'))
+    .pipe(browserSync.reload({stream: true}));
 });
 
-gulp.task('code', function() {
-	return gulp.src('app/**/*.html')
-	.pipe(browserSync.reload({ stream: true }))
+gulp.task('code', function () {
+  return gulp.src('app/**/*.html')
+    .pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('watch', function () {
-	gulp.watch('app/sass/**/*.sass', gulp.parallel('styles'));
-	gulp.watch(['app/js/common.js', 'app/libs/**/*.js'], gulp.parallel('scripts'));
-	gulp.watch('app/**/*.html', gulp.parallel('code'));
+  gulp.watch('app/sass/**/*.sass', gulp.parallel('styles'));
+  gulp.watch(['app/js/common.js', 'app/libs/**/*.js'], gulp.parallel('scripts'));
+  gulp.watch('app/**/*.html', gulp.parallel('code'));
 });
 
-gulp.task('default', gulp.parallel('styles', 'scripts', 'browser-sync', 'watch'));
+gulp.task('default', gulp.parallel('styles', 'scripts', 'connect-sync', 'watch'));

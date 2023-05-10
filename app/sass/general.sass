@@ -131,9 +131,8 @@ h3
   @include max(767)
     font-size: 25px
 
-
 h4
-  font: 700 16px/25px $mainFont
+  font: 600 30px/37px $mainFont
 
 table
   width: 100%
@@ -226,6 +225,7 @@ address
   &.yellow
     background-color: $yellow
     color: #fff
+    border: 1px solid transparent
     &:hover
       background-color: $brown
   &.transparent
@@ -239,6 +239,10 @@ address
   &.small
     font: 600 12px/15px $mainFont
     padding: 6px 12px
+  &.medium
+    font: 600 18px/22px $mainFont
+    padding: 13px 30px
+    gap: 8px
   &.big
     font: 600 18px/22px $mainFont
     padding: 16px 38px
@@ -264,3 +268,28 @@ svg
   scrollbar-width: none
   &::-webkit-scrollbar
     display: none
+
+.heading
+  font: 600 40px/52px $mainFont
+
+.link-block
+  position: relative
+  &:hover .link-block__arrow
+    background: $yellow url("../img/arrow-right-white.png") center/10px no-repeat
+  &__arrow
+    background: #fff
+    border-radius: 50%
+    padding: 9px
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    right: 27px
+    bottom: 20px
+    z-index: 1
+    width: 27px
+    height: 27px
+    background: #fff url("../img/arrow-right-black.png") center/10px no-repeat
+
+.highlight
+  color: $yellow

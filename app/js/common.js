@@ -4,7 +4,7 @@ $(document).ready(function () {
 
   tabType.on('change', ()=>{
     const id = $("input[name='tab-type']:checked").attr('id')
-    $('.tab__part').removeClass('active');
+    $('.tab-part').removeClass('active');
     $(`[data-type=${id}]`).addClass('active')
   })
 
@@ -56,5 +56,16 @@ $(document).ready(function () {
 
   $(".toggle-burger").on('click', function () {
     $('.mobile-menu').toggleClass('active')
+  })
+
+
+
+  $('.filter__button').on('click', function (e){
+    e.preventDefault();
+    const $this = $(this);
+    $('.filter__button').removeClass('active');
+    $this.addClass('active');
+    const input = $this.siblings().find('input:not(:checked)');
+    input.prop('checked', true)
   })
 })

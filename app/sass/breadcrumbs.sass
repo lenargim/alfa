@@ -1,0 +1,15 @@
+.breadcrumbs
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: flex-start
+  gap: 1.5em
+  margin-bottom: 30px
+  a
+    color: $yellow
+    position: relative
+    font: 400 16px/20px $mainFont
+    &:after
+      content: '>'
+      position: absolute
+      left: calc(100% + .5em)

@@ -1,0 +1,43 @@
+.apartments
+  display: grid
+  grid-template-columns: 1fr
+  gap: 60px
+  padding-bottom: 80px
+  &__item
+    display: grid
+    grid-template-columns: 2fr 3fr
+    gap: 30px
+  &__text
+    display: grid
+    grid-template-columns: 1fr
+    gap: 25px
+  &__header
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    gap: 1em
+    border-bottom: 1px dashed $gray
+    padding-bottom: 1em
+  &__right
+    white-space: nowrap
+    h4
+      color: $yellow
+  &__desc
+    color: $gray
+  &__info
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    gap: 1em
+    span
+      color: $gray
+    div
+      font-weight: 600
+  &__longtext
+    color: $black
+    line-height: 25px
+  &__row
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    gap: 25px

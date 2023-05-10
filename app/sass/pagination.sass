@@ -1,0 +1,28 @@
+.pagination
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  gap: 11px
+  &__link
+    line-height: 27px
+    font-weight: 600
+    text-align: center
+    min-width: 27px
+    padding: 0 6px
+
+    &.active, &:hover
+      color: #fff
+      border-radius: 5px
+      background: $yellow
+  &__prev, &__next
+    background: #EFEEEB
+    width: 84px
+    text-align: center
+    font: 600 12px/27px $mainFont
+    &:hover
+      color: #fff
+      background: $yellow
+  &__prev
+    border-radius: 60px 0 0 60px
+  &__next
+    border-radius: 0 60px 60px 0
