@@ -43,6 +43,24 @@ $(document).ready(function () {
     }
   });
 
+  const developerSliderThumb = new Swiper('.developer__slider-thumb', {
+    spaceBetween: 12,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+  })
+
+  const developerSlider = new Swiper('.developer__slider', {
+    spaceBetween: 15,
+    navigation: {
+      nextEl: '.developer-next',
+      prevEl: '.developer-prev',
+    },
+    thumbs: {
+      swiper: developerSliderThumb
+    },
+  })
+
 
   $('.check-length').each(function () {
     const text = $(this).text();

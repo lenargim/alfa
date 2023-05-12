@@ -33,10 +33,10 @@
                     <a href="/services.php" class="header__link">Услуги</a>
                     <a href="#" class="header__link">Журнал</a>
                     <a href="/apartments.php" class="header__link active">Квартиры</a>
-                    <a href="#" class="header__link">Новостройки</a>
+                    <a href="/new.php" class="header__link">Новостройки</a>
                     <a href="#" class="header__link">Вторичное</a>
                     <a href="#" class="header__link">Загородная</a>
-                    <a href="#" class="header__link">Команда</a>
+                    <a href="/team.php" class="header__link">Команда</a>
                     <a href="#" class="button yellow">Зарубежная</a>
                 </div>
             </div>

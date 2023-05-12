@@ -1,0 +1,231 @@
+.developer
+  padding: 60px 0 0
+  &__slider
+    position: relative
+    img
+      border-radius: 5px
+    .swiper-slide
+      aspect-ratio: 620/366
+      overflow: hidden
+    &-wrap
+      overflow: hidden
+    &-thumb
+      margin-top: 12px
+      .swiper-slide
+        aspect-ratio: 15/12
+        overflow: hidden
+        display: flex
+        align-items: center
+        justify-items: center
+  &__main
+    overflow: hidden
+    position: relative
+    display: grid
+    grid-template-columns: calc(50% + 20px) 45%
+    gap: 40px
+
+  &__arrow
+    width: 27px
+    height: 27px
+    background: #fff
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    top: calc(100% + 55px)
+    z-index: 5
+    background: #fff url("../img/arrow-right-black.png") center/10px no-repeat
+    cursor: pointer
+    transition: all .2s ease
+    &:hover
+      background: $yellow url("../img/arrow-right-white.png") center/10px no-repeat
+    @include max(1279)
+      display: none
+    img
+      width: 14px
+      height: 14px
+    &.developer-next
+      right: 10px
+      @include max(1365)
+        right: 10px
+    &.developer-prev
+      left: 10px
+      transform: rotate(180deg)
+      @include max(1365)
+        left: 10px
+    &.swiper-button-disabled
+      filter: grayscale(.8)
+  &__desc
+    font: 400 18px/35px $mainFont
+    margin-top: 1em
+    color: #3D3E40
+  &__table
+    width: 260px
+    margin-top: 1em
+    font: 400 16px/30px $mainFont
+    color: #3D3E40
+  &__row
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    overflow: hidden
+    span
+      font: 400 16px/30px $mainFont
+      &:first-child
+        color: #3D3E40
+        position: relative
+        &:after
+          content: ''
+          position: absolute
+          width: 300px
+          height: 1px
+          overflow: hidden
+          bottom: 10px
+          left: calc(100% + 10px)
+          background-image: linear-gradient(to right, $black 0%, $black 50%, transparent 50%)
+          background-size: 7px 1px
+          background-repeat: repeat-x
+      &:last-child
+        color: #292E32
+        font-weight: 600
+        position: relative
+        background: #fff
+        padding-left: 10px
+
+  &__consult
+    margin-top: 40px
+    background: #F9F9F8
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.15)
+    padding: 25px 36px 25px 57px
+    display: grid
+    grid-template-columns: 5fr 2fr
+    gap: 40px
+    &-title
+      font: 600 25px/30px $mainFont
+    &-desc
+      color: #3D3E40
+    &-form
+      border-right: 1px dashed #000
+    &-row
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-top: 30px
+      gap: 8px
+      margin-right: 40px
+    &-after
+      margin-top: 10px
+    .form__row
+      width: 100%
+    .button
+      padding: 11px 42px
+      font: 600 17px/21px $mainFont
+    &-person
+      display: flex
+      align-items: center
+      justify-content: center
+      gap: 20px
+    &-img
+      border-radius: 50%
+      width: 76px
+      height: 76px
+      overflow: hidden
+    &-name
+      white-space: nowrap
+      font: 400 18px/30px $mainFont
+    &-position
+      color: #787773
+      font: 400 14px/17px $mainFont
+    &-phone
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      gap: 8px
+      font: 600 18px/30px $mainFont
+      &::before
+        content: ''
+        width: 12px
+        height: 12px
+        display: block
+        background: url("../img/phone.png") center/cover no-repeat
+  &__feature
+    padding: 50px 0 70px
+    h3
+      text-align: center
+    &-wrap
+      display: grid
+      grid-template-columns: repeat(4, 1fr)
+      gap: 32px
+    &-item
+      box-shadow: 0px 0px 5px #E3E1DF
+      border-radius: 5px
+      overflow: hidden
+    &-name
+      padding: 16px 24px 10px
+      font: 600 20px/26px $mainFont
+    &-desc
+      line-height: 22px
+      padding: 0 24px 24px
+      color: #787773
+.layout
+  background: #F9F9F8
+  padding: 70px 0
+  h3
+    text-align: center
+  &__wrap
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 40px 60px
+    margin-bottom: 50px
+  &__link
+    overflow: hidden
+    position: relative
+    display: block
+    img
+      border-radius: 5px 5px 0 0
+  &__go
+    position: absolute
+    bottom: 25px
+    right: 25px
+    width: 27px
+    height: 27px
+    border-radius: 50%
+    background: $yellow url("../img/arrow-right-white.png") center/10px no-repeat
+  &__data
+    background: #fff
+    box-shadow: 0 0 5px #E3E1DF
+    overflow: hidden
+    padding: 20px 25px
+    border-radius: 0 0 5px 5px
+
+  &__price
+    font: 600 25px/26px $mainFont
+    color: $yellow
+    &-per-square
+      color: #3D3E40
+      line-height: 26px
+  &__type
+    border-radius: 5px
+    margin: 10px 0 20px
+    font: 400 14px/17px $mainFont
+    background: #F0EFED
+    display: inline-block
+    padding: 8px 25px
+  &__bottom
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 1em
+    font: 600 16px/20px $mainFont
+    border-top: 1px dashed #A8A7A6
+    padding-top: 18px
+    &-part
+      display: flex
+      flex-direction: column
+      &:first-child:before
+        content: 'Срок сдачи'
+      &:last-child:before
+        content: 'Этажность'
+      &:before
+        font-weight: 400
+        color: #A8A7A6

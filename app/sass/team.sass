@@ -1,0 +1,57 @@
+.director
+  padding: 80px 0
+  &__wrap
+    display: grid
+    gap: 50px
+    grid-template-columns: repeat(2,1fr)
+  &__desc
+    color: #787773
+    font: 400 18px/35px $mainFont
+  &__cite
+    font: 400 25px/35px $mainFont
+    font-style: italic
+    margin-top: 1em
+    p:not(:last-child)
+      margin-bottom: 1em
+  &__button
+    margin-top: 50px
+  &__img
+    border-radius: 5px
+    overflow: hidden
+
+.team
+  background: url('../img/services-bg.png') center/cover no-repeat
+  padding: 60px 0 80px
+  h2
+    text-align: center
+  &__wrap
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    margin-top: 50px
+    gap: 40px 30px
+  &__item
+    border-radius: 5px
+    background: #fff
+    box-shadow: 0 0 5px #E3E1DF
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    &-body
+      margin: 20px 20px 10px
+      height: 100%
+    &-phone
+      margin: auto 20px 20px
+    &-name
+      font: 600 20px/26px $mainFont
+    &-desc
+      color: $gray
+
+.certificates
+  padding: 60px 0
+  h2
+    text-align: center
+  &__wrap
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 25px
+    align-content: center

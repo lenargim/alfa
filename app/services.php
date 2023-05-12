@@ -4,7 +4,7 @@
     <div class="container">
         <div class="breadcrumbs">
             <a href="/">Главная</a>
-            <span>Услуги</span>
+            <span>Наши услуги</span>
         </div>
         <h1 class="heading">Услуги</h1>
     </div>
