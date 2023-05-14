@@ -1,61 +1,12 @@
 .developer
   padding: 60px 0 0
-  &__slider
-    position: relative
-    img
-      border-radius: 5px
-    .swiper-slide
-      aspect-ratio: 620/366
-      overflow: hidden
-    &-wrap
-      overflow: hidden
-    &-thumb
-      margin-top: 12px
-      .swiper-slide
-        aspect-ratio: 15/12
-        overflow: hidden
-        display: flex
-        align-items: center
-        justify-items: center
+
   &__main
     overflow: hidden
     position: relative
     display: grid
     grid-template-columns: calc(50% + 20px) 45%
     gap: 40px
-
-  &__arrow
-    width: 27px
-    height: 27px
-    background: #fff
-    border-radius: 50%
-    display: flex
-    align-items: center
-    justify-content: center
-    position: absolute
-    top: calc(100% + 55px)
-    z-index: 5
-    background: #fff url("../img/arrow-right-black.png") center/10px no-repeat
-    cursor: pointer
-    transition: all .2s ease
-    &:hover
-      background: $yellow url("../img/arrow-right-white.png") center/10px no-repeat
-    @include max(1279)
-      display: none
-    img
-      width: 14px
-      height: 14px
-    &.developer-next
-      right: 10px
-      @include max(1365)
-        right: 10px
-    &.developer-prev
-      left: 10px
-      transform: rotate(180deg)
-      @include max(1365)
-        left: 10px
-    &.swiper-button-disabled
-      filter: grayscale(.8)
   &__desc
     font: 400 18px/35px $mainFont
     margin-top: 1em

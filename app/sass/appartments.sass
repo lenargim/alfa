@@ -5,8 +5,10 @@
   padding-bottom: 80px
   &__item
     display: grid
-    grid-template-columns: 2fr 3fr
+    grid-template-columns: 480px 680px
     gap: 30px
+    overflow: hidden
+    position: relative
   &__text
     display: grid
     grid-template-columns: 1fr
@@ -41,3 +43,49 @@
     align-items: center
     justify-content: flex-start
     gap: 25px
+  &__slider
+    position: relative
+    img
+      filter: drop-shadow(0px 0px 6px rgba(168, 167, 166, 0.25))
+      border-radius: 10px 10px 0 0
+      aspect-ratio: 482/271
+    &-wrap
+      overflow: hidden
+    &-thumb
+      margin-top: 12px
+      img
+        overflow: hidden
+        aspect-ratio: 108/82
+      .more-photo
+        position: relative
+        &:after
+          content: ''
+          position: absolute
+          left: 0
+          right: 0
+          top: 0
+          bottom: 0
+          background: rgba(0,0,0,.5)
+        span
+          position: absolute
+          z-index: 2
+          width: 60%
+          text-align: center
+          color: #fff
+          font: 600 16px/19px $mainFont
+          top: 50%
+          left: 50%
+          transform: translate(-50%,-50%)
+  &__arrow
+    width: 24px
+    height: 24px
+    position: absolute
+    z-index: 4
+    background: url("../img/arrow-big.png") center/contain no-repeat
+    top: 50%
+    cursor: pointer
+  &__prev
+    left: 20px
+    transform: rotate(180deg)
+  &__next
+    right: 20px

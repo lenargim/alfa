@@ -1,0 +1,201 @@
+.apartment
+  padding: 55px 0 0
+  &__wrap
+    overflow: hidden
+    position: relative
+    display: grid
+    grid-template-columns: calc(50% + 20px) 45%
+    gap: 40px
+  &__address
+    font: 400 25px/40px $mainFont
+    color: #A8A7A6
+  &__price
+    display: flex
+    align-content: center
+    justify-items: flex-start
+    gap: 1em
+    margin-top: 1em
+    span:first-child
+      font: 600 35px/26px $mainFont
+      color: $yellow
+    span:last-child
+      font: 400 25px/26px $mainFont
+  &__tables
+    display: grid
+    gap: 50px
+    grid-template-columns: 1fr 1fr
+  &__table
+    margin-top: 1em
+    font: 400 16px/30px $mainFont
+    color: #3D3E40
+    &-row
+      display: flex
+      align-items: flex-end
+      justify-content: space-between
+      overflow: hidden
+      span
+        font: 400 16px/30px $mainFont
+        &:first-child
+          color: #3D3E40
+          position: relative
+          &:after
+            content: ''
+            position: absolute
+            width: 300px
+            height: 1px
+            overflow: hidden
+            bottom: 10px
+            left: calc(100% + 10px)
+            background-image: linear-gradient(to right, $black 0%, $black 50%, transparent 50%)
+            background-size: 7px 1px
+            background-repeat: repeat-x
+        &:last-child
+          color: #292E32
+          font-weight: 600
+          position: relative
+          background: #fff
+          padding-left: 10px
+
+  &__desc
+    font: 400 18px/35px $mainFont
+  &__blocks
+    display: grid
+    gap: 20px
+    grid-template-columns: calc(50% + 30px) calc(50% - 30px)
+  &__block
+    background: #F9F9F8
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.15)
+    padding: 25px 30px
+    margin-top: 50px
+  &__question
+    display: grid
+    grid-template-columns: 1fr 240px
+    gap: 20px
+    &-title
+      font: 600 25px/30px $mainFont
+      margin-bottom: .5em
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      white-space: nowrap
+      gap: .5em
+      &:after
+        content: ''
+        display: inline-block
+        width: 18px
+        height: 18px
+        background: url("../img/question.png") center/contain no-repeat
+    &-person
+      display: flex
+      align-items: flex-start
+      justify-content: center
+      gap: 20px
+    &-img
+      border-radius: 50%
+      width: 76px
+      height: 76px
+      overflow: hidden
+    &-name
+      white-space: nowrap
+      font: 400 18px/30px $mainFont
+    &-position
+      color: #787773
+      font: 400 14px/17px $mainFont
+    &-phone
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      gap: 8px
+      font: 600 18px/30px $mainFont
+      &::before
+        content: ''
+        width: 12px
+        height: 12px
+        display: block
+        background: url("../img/phone.png") center/cover no-repeat
+    &-call
+      margin-top: 1em
+      font: 600 17px/21px $mainFont
+      color: $yellow
+      text-decoration: underline
+    &-form
+      display: grid
+      grid-template-columns: 1fr
+      gap: 12px
+      align-content: flex-start
+      .button
+        width: 100%
+        height: 46px
+    &-after
+      color: #A8A7A6
+      font: 400 11px/13px $mainFont
+  &__schedule
+    &-title
+      font: 600 25px/30px $mainFont
+      margin-bottom: .5em
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      white-space: nowrap
+      gap: .5em
+      &:after
+        content: ''
+        display: inline-block
+        width: 18px
+        height: 18px
+        background: url("../img/schedule.png") center/contain no-repeat
+    &-form
+      display: grid
+      grid-template-columns: 1fr
+      gap: 12px
+    &-radio
+      display: flex
+      align-content: center
+      justify-content: space-between
+      gap: 12px
+    &-item
+      position: relative
+      width: 100%
+      input
+        opacity: 0
+        z-index: -1
+        position: absolute
+        width: 0
+        &:checked + label
+          border: 1px solid #DAAA57
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.1)
+      label
+        box-sizing: border-box
+        border: 1px solid transparent
+        background: #fff
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.1)
+        border-radius: 5px
+        padding: 3px 1em
+        display: grid
+        grid-template-columns: 1fr
+        justify-items: center
+        white-space: nowrap
+        text-align: center
+        cursor: pointer
+        div:first-child
+          font: 400 14px/18px $mainFont
+        div:last-child
+          font: 600 16px/17px $mainFont
+    &-row
+      display: flex
+      gap: 8px
+      align-content: center
+  &__calc
+    padding: 60px 0 80px
+    h3
+      text-align: center
+
+.list
+  padding: 70px 0 90px
+  background: url('../img/services-bg.png') center/cover no-repeat
+  &__wrap
+    display: grid
+    grid-template-columns: 1fr
+    gap: 60px
+  h3
+    text-align: center

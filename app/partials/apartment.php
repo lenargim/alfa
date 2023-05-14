@@ -1,5 +1,43 @@
 <div class="apartments__item">
-    <div class="apartments__slider"></div>
+    <div class="apartments__slider-wrap">
+        <div class="apartments__slider">
+            <div class="navigation">
+                <div class="apartments-slider-prev apartments__arrow apartments__prev"></div>
+                <div class="apartments-slider-next apartments__arrow apartments__next"></div>
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/img/single1.jpg" alt="Двухкомнатная, 48 м²" class="apartments__item-img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/single2.jpg" alt="Двухкомнатная, 48 м²" class="apartments__item-img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/single3.jpg" alt="Двухкомнатная, 48 м²" class="apartments__item-img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/single4.jpg" alt="Двухкомнатная, 48 м²" class="apartments__item-img">
+                </div>
+            </div>
+        </div>
+        <div class="apartments__slider-thumb">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/img/single1.jpg" alt="Двухкомнатная, 48 м²" class="apartments__item-thumb">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/single2.jpg" alt="Двухкомнатная, 48 м²" class="apartments__item-thumb">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/single3.jpg" alt="Двухкомнатная, 48 м²" class="apartments__item-thumb">
+                </div>
+                <a href="/apartment.php" class="swiper-slide more-photo">
+                    <img src="/img/single4.jpg" alt="Двухкомнатная, 48 м²" class="apartments__item-thumb">
+                    <span>Еще 5 фото</span>
+                </a>
+            </div>
+        </div>
+    </div>
     <div class="apartments__text">
         <div class="apartments__header">
             <div class="apartments__left">
@@ -33,7 +71,8 @@
                 <div>Исетский</div>
             </div>
         </div>
-        <div class="apartments__longtext check-length" data-max="450">Срочно!!!!!! Продам квартиру. Центр Инфраструктура развита магазины в
+        <div class="apartments__longtext check-length" data-max="450">Срочно!!!!!! Продам квартиру. Центр Инфраструктура
+            развита магазины в
             шаговой доступности , рейсовые автобусы, школа через дорогу от дома , детский сад , спорткомплекс.
             Магазин строительных материалов , продуктовые , магнит ) В Квартире Косметический ремонт Имеется
             небольшой огород возле дома Бесплатное оформление ипотеки по сниженным ставкам от банков-партнеров.
