@@ -611,11 +611,10 @@
                         федеральной
                         собственности
                     </div>
-                    <div class="magazine__desc check-length" data-max="260">Застройщик «Страна Девелопмент» получил
+                    <span class="magazine__desc check-length" data-max="250">Застройщик «Страна Девелопмент» получил
                         официальное разрешение на комплексное развитие территории площадью 8,4 га по ул. Ирбитская.
-                        Аукцион
-                        проводился государственной компанией ДОМ.рф в декабре прошлого
-                    </div>
+                        Аукцион проводился государственной компанией ДОМ.рф в декабре прошлого longtext magazine__desc magazine__desc magazine__desc magazine__desc magazine__desc
+                    </span>&nbsp;<a href="#" class="link">Подробнее</a>
                 </div>
                 <div class="magazine__list">
                     <div class="magazine__list-item">
@@ -631,7 +630,7 @@
                             <div class="magazine__list-name">Новые ипотечные меры ЦБ и изменения на рынке</div>
                             <div class="magazine__list-desc">
                                 <span class="check-length" data-max="62">Застройщик «Страна Девелопмент» получил официальное разрешение</span>
-                                <a href="#">Подробнее</a>
+                                &nbsp;<a href="#" class="link">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -648,7 +647,7 @@
                             <div class="magazine__list-name">Новые ипотечные меры ЦБ и изменения на рынке</div>
                             <div class="magazine__list-desc">
                                 <span class="check-length" data-max="62">Застройщик «Страна Девелопмент» получил официальное разрешение</span>
-                                <a href="#">Подробнее</a>
+                                &nbsp;<a href="#" class="link">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -665,7 +664,7 @@
                             <div class="magazine__list-name">Новые ипотечные меры ЦБ и изменения на рынке</div>
                             <div class="magazine__list-desc">
                                 <span class="check-length" data-max="62">Застройщик «Страна Девелопмент» получил официальное разрешение</span>
-                                <a href="#">Подробнее</a>
+                                &nbsp;<a href="#" class="link">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -682,13 +681,13 @@
                             <div class="magazine__list-name">Новые ипотечные меры ЦБ и изменения на рынке</div>
                             <div class="magazine__list-desc">
                                 <span class="check-length" data-max="62">Застройщик «Страна Девелопмент» получил официальное разрешение апи апи ав пиваи вп </span>
-                                <a href="#">Подробнее</a>
+                                &nbsp;<a href="#" class="link">Подробнее</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <a href="#" class="button transparent big mobile magazine__all">
+            <a href="/magazine.php" class="button transparent big mobile magazine__all">
                 <span>Все новости</span>
                 <img src="/img/arrow-right-black.png" alt="Все новости">
             </a>

@@ -1,0 +1,46 @@
+.news
+  margin-bottom: 80px
+  .tab__menu
+    margin: 50px 0
+  &__img
+    max-width: 580px
+    float: left
+    margin-right: 2em
+    margin-bottom: 1em
+  &__top
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    gap: 15px
+    font: 400 14px/17px $mainFont
+    margin-bottom: 20px
+  &__type
+    background: #F0EFED
+    border-radius: 5px
+    text-align: center
+    padding: 7px 20px
+  &__text
+    font: 400 18px/32px $mainFont
+    white-space: pre-wrap
+    p:not(:last-of-type)
+      margin-bottom: 1em
+    ul
+      margin: 0
+      padding: 0
+      line-height: 1
+    li
+      margin: 0
+      padding: 0
+      font: 400 18px/32px $mainFont
+      &:before
+        content: '•'
+        display: inline-block
+        margin-right: 0.5em
+  &__similar
+    margin-top: 50px
+    h3
+      text-align: center
+    &-wrap
+      display: grid
+      grid-template-columns: repeat(4, 1fr)
+      gap: 27px

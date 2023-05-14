@@ -31,7 +31,7 @@
                 <div class="header__nav desktop">
                     <a href="/about.php" class="header__link">О компании</a>
                     <a href="/services.php" class="header__link">Услуги</a>
-                    <a href="#" class="header__link">Журнал</a>
+                    <a href="/magazine.php" class="header__link">Журнал</a>
                     <a href="/apartments.php" class="header__link active">Квартиры</a>
                     <a href="/new.php" class="header__link">Новостройки</a>
                     <a href="#" class="header__link">Вторичное</a>
