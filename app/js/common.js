@@ -80,7 +80,6 @@ $(document).ready(function () {
   });
 
 
-
   $('.check-length').each(function () {
     const text = $(this).text();
     const length = text.length;
@@ -143,6 +142,13 @@ $(document).ready(function () {
   }
 
   rangeInputs.each(changeInputRange);
+  calc({
+    price: Number($('input[name="price"]').val()),
+    first: Number($('input[name="first"]').val()),
+    time: Number($('input[name="time"]').val()),
+    percent: Number($('.percent').data('percent'))
+
+  })
 
   function changeInputRange() {
     const min = $(this).attr('min')
@@ -172,6 +178,22 @@ $(document).ready(function () {
       $('.first-percent').text(`${percentTotal} %`)
     }
   }
+
+  $('.video__item').on('click', function (e){
+    e.preventDefault();
+    const video = $(this).find('video')[0];
+    video.paused ? video.play() : video.pause()
+    $(this).toggleClass('playing')
+  })
+  $('video').on('ended', function (){
+    $(this)[0].load();
+    $(this).parents('.video__item').removeClass('playing')
+  })
+
+
+  $('.faq__question').on('click', function (){
+    $(this).parents('.faq__item').toggleClass('open')
+  })
 })
 
 

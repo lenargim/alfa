@@ -16,7 +16,7 @@
             <h3>Каталог недвижимости </h3>
             <div class="catalog__wrap">
                 <div class="catalog__item link-block">
-                    <a href="#" class="catalog__link">
+                    <a href="/new.php" class="catalog__link">
                         <img src="/img/cat1.jpg" alt="">
                         <div class="link-block__arrow"></div>
                     </a>
@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div class="catalog__item link-block">
-                    <a href="#" class="catalog__link">
+                    <a href="/new.php" class="catalog__link">
                         <img src="/img/cat1.jpg" alt="">
                         <div class="link-block__arrow"></div>
                     </a>
@@ -50,7 +50,7 @@
                     </div>
                 </div>
                 <div class="catalog__item link-block">
-                    <a href="#" class="catalog__link">
+                    <a href="/new.php" class="catalog__link">
                         <img src="/img/cat1.jpg" alt="">
                         <div class="link-block__arrow"></div>
                     </a>
@@ -77,7 +77,7 @@
             </div>
             <div class="wrap UAE__wrap no-scroll">
                 <div class="item link-block">
-                    <a href="#" class="link link-block">
+                    <a href="/new.php" class="link link-block">
                         <img class="img" src="/img/OAE1.jpg" alt="">
                         <div class="link-block__arrow"></div>
                     </a>
@@ -94,7 +94,7 @@
                     </div>
                 </div>
                 <div class="item link-block">
-                    <a href="#" class="link link-block">
+                    <a href="/new.php" class="link link-block">
                         <img class="img" src="/img/OAE2.jpg" alt="">
                         <div class="link-block__arrow"></div>
                     </a>
@@ -111,7 +111,7 @@
                     </div>
                 </div>
                 <div class="item link-block">
-                    <a href="#" class="link link-block">
+                    <a href="/new.php" class="link link-block">
                         <img class="img" src="/img/OAE3.jpg" alt="">
                         <div class="link-block__arrow"></div>
                     </a>
@@ -142,21 +142,21 @@
                 сопровождаем сделку юридически. Наши услуги по новостройкам бесплатны.
             </div>
             <div class="services__wrap">
-                <a href="#" class="services__item link-block">
+                <a href="/mortgage.php" class="services__item link-block">
                     <div class="services__img">
                         <img src="/img/service1.jpg" alt="Дистанционная покупка квартиры">
                         <div class="link-block__arrow"></div>
                     </div>
                     <div class="services__title">Дистанционная покупка квартиры</div>
                 </a>
-                <a href="#" class="services__item link-block">
+                <a href="/mortgage.php" class="services__item link-block">
                     <div class="services__img">
                         <img src="/img/service2.jpg" alt="Обмен квартиры на новостройку">
                         <div class="link-block__arrow"></div>
                     </div>
                     <div class="services__title">Обмен квартиры на новостройку</div>
                 </a>
-                <a href="#" class="services__item link-block">
+                <a href="/mortgage.php" class="services__item link-block">
                     <div class="services__img">
                         <img src="/img/service3.jpg" alt="Покупка квартиры по сертификатам">
                         <div class="link-block__arrow"></div>
@@ -210,7 +210,7 @@
             <div class="tab__wrap">
                 <div class="tab-part tab__part no-scroll active wrap" data-type="tab-1">
                     <div class="item">
-                        <a href="#" class="link link-block">
+                        <a href="/new.php" class="link link-block">
                             <img class="img" src="/img/tab1.jpg" alt="">
                             <span class="link-block__arrow"></span>
                         </a>
@@ -230,7 +230,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <a href="#" class="link link-block">
+                        <a href="/new.php" class="link link-block">
                             <img class="img" src="/img/tab2.jpg" alt="">
                             <span class="link-block__arrow"></span>
                         </a>
@@ -250,7 +250,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <a href="#" class="link link-block">
+                        <a href="/new.php" class="link link-block">
                             <img class="img" src="/img/tab3.jpg" alt="">
                             <span class="link-block__arrow"></span>
                         </a>
@@ -272,7 +272,7 @@
                 </div>
                 <div class="tab-part tab__part no-scroll wrap" data-type="tab-2">
                     <div class="item">
-                        <a href="#" class="link link-block">
+                        <a href="/new.php" class="link link-block">
                             <img class="img" src="/img/tab1.jpg" alt="">
                             <span class="link-block__arrow"></span>
                         </a>
@@ -292,7 +292,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <a href="#" class="link link-block">
+                        <a href="/new.php" class="link link-block">
                             <img class="img" src="/img/tab2.jpg" alt="">
                             <span class="link-block__arrow"></span>
                         </a>
@@ -312,7 +312,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <a href="#" class="link link-block">
+                        <a href="/new.php" class="link link-block">
                             <img class="img" src="/img/tab3.jpg" alt="">
                             <span class="link-block__arrow"></span>
                         </a>
@@ -334,7 +334,7 @@
                 </div>
                 <div class="tab-part tab__part no-scroll wrap" data-type="tab-3">
                     <div class="item">
-                        <a href="#" class="link link-block">
+                        <a href="/new.php" class="link link-block">
                             <img class="img" src="/img/tab1.jpg" alt="">
                             <span class="link-block__arrow"></span>
                         </a>
@@ -354,7 +354,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <a href="#" class="link link-block">
+                        <a href="/new.php" class="link link-block">
                             <img class="img" src="/img/tab2.jpg" alt="">
                             <span class="link-block__arrow"></span>
                         </a>
@@ -374,7 +374,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <a href="#" class="link link-block">
+                        <a href="/new.php" class="link link-block">
                             <img class="img" src="/img/tab3.jpg" alt="">
                             <span class="link-block__arrow"></span>
                         </a>
@@ -396,7 +396,7 @@
                 </div>
                 <div class="tab-part tab__part no-scroll wrap" data-type="tab-4">
                     <div class="item">
-                        <a href="#" class="link link-block">
+                        <a href="/new.php" class="link link-block">
                             <img class="img" src="/img/tab1.jpg" alt="">
                             <span class="link-block__arrow"></span>
                         </a>
@@ -416,7 +416,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <a href="#" class="link link-block">
+                        <a href="/new.php" class="link link-block">
                             <img class="img" src="/img/tab2.jpg" alt="">
                             <span class="link-block__arrow"></span>
                         </a>
@@ -436,7 +436,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <a href="#" class="link link-block">
+                        <a href="/new.php" class="link link-block">
                             <img class="img" src="/img/tab3.jpg" alt="">
                             <span class="link-block__arrow"></span>
                         </a>
@@ -487,10 +487,7 @@
                         доказывает
                         качество наших услуг.
                     </div>
-                    <a href="#" class="button yellow big about__link">
-                        <span>Читать подробнее</span>
-                        <img src="/img/arrow-right-white.png" alt="">
-                    </a>
+                    <a href="/news.php" class="button yellow big about__link">Читать подробнее</a>
                 </div>
             </div>
         </div>
@@ -592,10 +589,7 @@
         <div class="container">
             <div class="magazine__title">
                 <h3>Журнал рынка недвижимости</h3>
-                <a href="#" class="button transparent big desktop">
-                    <span>Все новости</span>
-                    <img src="/img/arrow-right-black.png" alt="Все новости">
-                </a>
+                <a href="/magazine.php" class="button transparent big desktop">Все новости</a>
             </div>
             <div class="magazine__wrap">
                 <div class="magazine__first">
@@ -614,7 +608,7 @@
                     <span class="magazine__desc check-length" data-max="250">Застройщик «Страна Девелопмент» получил
                         официальное разрешение на комплексное развитие территории площадью 8,4 га по ул. Ирбитская.
                         Аукцион проводился государственной компанией ДОМ.рф в декабре прошлого longtext magazine__desc magazine__desc magazine__desc magazine__desc magazine__desc
-                    </span>&nbsp;<a href="#" class="link">Подробнее</a>
+                    </span>&nbsp;<a href="/news.php" class="link">Подробнее</a>
                 </div>
                 <div class="magazine__list">
                     <div class="magazine__list-item">
@@ -630,7 +624,7 @@
                             <div class="magazine__list-name">Новые ипотечные меры ЦБ и изменения на рынке</div>
                             <div class="magazine__list-desc">
                                 <span class="check-length" data-max="62">Застройщик «Страна Девелопмент» получил официальное разрешение</span>
-                                &nbsp;<a href="#" class="link">Подробнее</a>
+                                &nbsp;<a href="/news.php" class="link">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -647,7 +641,7 @@
                             <div class="magazine__list-name">Новые ипотечные меры ЦБ и изменения на рынке</div>
                             <div class="magazine__list-desc">
                                 <span class="check-length" data-max="62">Застройщик «Страна Девелопмент» получил официальное разрешение</span>
-                                &nbsp;<a href="#" class="link">Подробнее</a>
+                                &nbsp;<a href="/news.php" class="link">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -664,7 +658,7 @@
                             <div class="magazine__list-name">Новые ипотечные меры ЦБ и изменения на рынке</div>
                             <div class="magazine__list-desc">
                                 <span class="check-length" data-max="62">Застройщик «Страна Девелопмент» получил официальное разрешение</span>
-                                &nbsp;<a href="#" class="link">Подробнее</a>
+                                &nbsp;<a href="/news.php" class="link">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -681,7 +675,7 @@
                             <div class="magazine__list-name">Новые ипотечные меры ЦБ и изменения на рынке</div>
                             <div class="magazine__list-desc">
                                 <span class="check-length" data-max="62">Застройщик «Страна Девелопмент» получил официальное разрешение апи апи ав пиваи вп </span>
-                                &nbsp;<a href="#" class="link">Подробнее</a>
+                                &nbsp;<a href="/news.php" class="link">Подробнее</a>
                             </div>
                         </div>
                     </div>

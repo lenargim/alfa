@@ -7,7 +7,7 @@
                     <div class="calc__item-current price-total"></div>
                 </div>
                 <div class="calc__input">
-                    <input type="range" name="price" min="1000" max="30000000" step="1000" value="2050000"
+                    <input type="range" name="price" min="1000" max="30000000" step="1000" value="1000000"
                            class="calc-change">
                     <div class="calc__input-min calc__input-sub price-min"></div>
                     <div class="calc__input-max calc__input-sub price-max"></div>
@@ -42,7 +42,7 @@
                 <div class="calc__item-top">
                     <div class="calc__item-title">Ежемесячный платеж</div>
                     <!--      data-percent - ставка ипотеки % - подставить нужную.         -->
-                    <div class="calc__item-total percent" data-percent="9">34 539 ₽</div>
+                    <div class="calc__item-total percent" data-percent="9"></div>
                 </div>
                 <button type="submit" class="button yellow">Отправить заявку на расчет</button>
             </div>

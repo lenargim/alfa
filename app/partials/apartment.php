@@ -86,7 +86,7 @@
                 <img src="/img/phone.png" alt="phone" class="header__svg">
                 <span>+7 (3452) 21-51-42</span>
             </a>
-            <a href="/apartments-detailed.php" class="button yellow medium">Подробнее</a>
+            <a href="/apartment.php" class="button yellow medium">Подробнее</a>
         </div>
     </div>
 </div>
