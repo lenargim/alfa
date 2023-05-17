@@ -57,6 +57,7 @@
         </div>
         <div class="new__wrap" data-type="tab-1">
             <div class="item">
+                <?php include('partials/favorite.php'); ?>
                 <a href="/developer.php" class="link link-block">
                     <img class="img" src="/img/tab1.jpg" alt="">
                     <span class="link-block__arrow"></span>
@@ -77,6 +78,7 @@
                 </div>
             </div>
             <div class="item">
+                <?php include('partials/favorite.php'); ?>
                 <a href="/developer.php" class="link link-block">
                     <img class="img" src="/img/tab2.jpg" alt="">
                     <span class="link-block__arrow"></span>
@@ -97,6 +99,7 @@
                 </div>
             </div>
             <div class="item">
+                <?php include('partials/favorite.php'); ?>
                 <a href="/developer.php" class="link link-block">
                     <img class="img" src="/img/tab3.jpg" alt="">
                     <span class="link-block__arrow"></span>
@@ -117,6 +120,7 @@
                 </div>
             </div>
             <div class="item">
+                <?php include('partials/favorite.php'); ?>
                 <a href="/developer.php" class="link link-block">
                     <img class="img" src="/img/tab1.jpg" alt="">
                     <span class="link-block__arrow"></span>
@@ -137,6 +141,7 @@
                 </div>
             </div>
             <div class="item">
+                <?php include('partials/favorite.php'); ?>
                 <a href="/developer.php" class="link link-block">
                     <img class="img" src="/img/tab2.jpg" alt="">
                     <span class="link-block__arrow"></span>
@@ -157,6 +162,7 @@
                 </div>
             </div>
             <div class="item">
+                <?php include('partials/favorite.php'); ?>
                 <a href="/developer.php" class="link link-block">
                     <img class="img" src="/img/tab3.jpg" alt="">
                     <span class="link-block__arrow"></span>

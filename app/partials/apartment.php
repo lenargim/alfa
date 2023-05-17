@@ -1,6 +1,7 @@
 <div class="apartments__item">
     <div class="apartments__slider-wrap">
         <div class="apartments__slider">
+            <?php include('favorite.php'); ?>
             <div class="navigation">
                 <div class="apartments-slider-prev apartments__arrow apartments__prev"></div>
                 <div class="apartments-slider-next apartments__arrow apartments__next"></div>

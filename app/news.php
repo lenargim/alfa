@@ -77,7 +77,7 @@
                                 <span>2023</span>
                             </div>
                         </div>
-                        <div class="magazine__tab">Статьи</div>
+                        <div class="magazine__tab">Новости</div>
                         <div class="magazine__name check-length" data-max="35">Тюменская компания получила первое разрешение на КРТ земли из
                             федеральной
                             собственности
@@ -98,7 +98,7 @@
                                 <span>2023</span>
                             </div>
                         </div>
-                        <div class="magazine__tab">Статьи</div>
+                        <div class="magazine__tab">Новости</div>
                         <div class="magazine__name check-length" data-max="35">Тюменская компания получила первое разрешение на КРТ земли из
                             федеральной
                             собственности
@@ -119,7 +119,7 @@
                                 <span>2023</span>
                             </div>
                         </div>
-                        <div class="magazine__tab">Статьи</div>
+                        <div class="magazine__tab">Новости</div>
                         <div class="magazine__name check-length" data-max="35">Тюменская компания получила первое разрешение на КРТ земли из
                             федеральной
                             собственности
@@ -140,7 +140,7 @@
                                 <span>2023</span>
                             </div>
                         </div>
-                        <div class="magazine__tab">Статьи</div>
+                        <div class="magazine__tab">Новости</div>
                         <div class="magazine__name check-length" data-max="35">Тюменская компания получила первое разрешение на КРТ земли из
                             федеральной
                             собственности

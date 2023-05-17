@@ -77,6 +77,7 @@
             </div>
             <div class="wrap UAE__wrap no-scroll">
                 <div class="item link-block">
+                    <?php include('partials/favorite.php'); ?>
                     <a href="/new.php" class="link link-block">
                         <img class="img" src="/img/OAE1.jpg" alt="">
                         <div class="link-block__arrow"></div>
@@ -94,6 +95,7 @@
                     </div>
                 </div>
                 <div class="item link-block">
+                    <?php include('partials/favorite.php'); ?>
                     <a href="/new.php" class="link link-block">
                         <img class="img" src="/img/OAE2.jpg" alt="">
                         <div class="link-block__arrow"></div>
@@ -111,6 +113,7 @@
                     </div>
                 </div>
                 <div class="item link-block">
+                    <?php include('partials/favorite.php'); ?>
                     <a href="/new.php" class="link link-block">
                         <img class="img" src="/img/OAE3.jpg" alt="">
                         <div class="link-block__arrow"></div>
@@ -210,6 +213,7 @@
             <div class="tab__wrap">
                 <div class="tab-part tab__part no-scroll active wrap" data-type="tab-1">
                     <div class="item">
+                        <?php include('partials/favorite.php'); ?>
                         <a href="/new.php" class="link link-block">
                             <img class="img" src="/img/tab1.jpg" alt="">
                             <span class="link-block__arrow"></span>
@@ -230,6 +234,7 @@
                         </div>
                     </div>
                     <div class="item">
+                        <?php include('partials/favorite.php'); ?>
                         <a href="/new.php" class="link link-block">
                             <img class="img" src="/img/tab2.jpg" alt="">
                             <span class="link-block__arrow"></span>
@@ -250,6 +255,7 @@
                         </div>
                     </div>
                     <div class="item">
+                        <?php include('partials/favorite.php'); ?>
                         <a href="/new.php" class="link link-block">
                             <img class="img" src="/img/tab3.jpg" alt="">
                             <span class="link-block__arrow"></span>
@@ -272,6 +278,7 @@
                 </div>
                 <div class="tab-part tab__part no-scroll wrap" data-type="tab-2">
                     <div class="item">
+                        <?php include('partials/favorite.php'); ?>
                         <a href="/new.php" class="link link-block">
                             <img class="img" src="/img/tab1.jpg" alt="">
                             <span class="link-block__arrow"></span>
@@ -292,6 +299,7 @@
                         </div>
                     </div>
                     <div class="item">
+                        <?php include('partials/favorite.php'); ?>
                         <a href="/new.php" class="link link-block">
                             <img class="img" src="/img/tab2.jpg" alt="">
                             <span class="link-block__arrow"></span>
@@ -312,6 +320,7 @@
                         </div>
                     </div>
                     <div class="item">
+                        <?php include('partials/favorite.php'); ?>
                         <a href="/new.php" class="link link-block">
                             <img class="img" src="/img/tab3.jpg" alt="">
                             <span class="link-block__arrow"></span>
@@ -334,6 +343,7 @@
                 </div>
                 <div class="tab-part tab__part no-scroll wrap" data-type="tab-3">
                     <div class="item">
+                        <?php include('partials/favorite.php'); ?>
                         <a href="/new.php" class="link link-block">
                             <img class="img" src="/img/tab1.jpg" alt="">
                             <span class="link-block__arrow"></span>
@@ -354,6 +364,7 @@
                         </div>
                     </div>
                     <div class="item">
+                        <?php include('partials/favorite.php'); ?>
                         <a href="/new.php" class="link link-block">
                             <img class="img" src="/img/tab2.jpg" alt="">
                             <span class="link-block__arrow"></span>
@@ -374,6 +385,7 @@
                         </div>
                     </div>
                     <div class="item">
+                        <?php include('partials/favorite.php'); ?>
                         <a href="/new.php" class="link link-block">
                             <img class="img" src="/img/tab3.jpg" alt="">
                             <span class="link-block__arrow"></span>
@@ -396,6 +408,7 @@
                 </div>
                 <div class="tab-part tab__part no-scroll wrap" data-type="tab-4">
                     <div class="item">
+                        <?php include('partials/favorite.php'); ?>
                         <a href="/new.php" class="link link-block">
                             <img class="img" src="/img/tab1.jpg" alt="">
                             <span class="link-block__arrow"></span>
@@ -416,6 +429,7 @@
                         </div>
                     </div>
                     <div class="item">
+                        <?php include('partials/favorite.php'); ?>
                         <a href="/new.php" class="link link-block">
                             <img class="img" src="/img/tab2.jpg" alt="">
                             <span class="link-block__arrow"></span>
@@ -436,6 +450,7 @@
                         </div>
                     </div>
                     <div class="item">
+                        <?php include('partials/favorite.php'); ?>
                         <a href="/new.php" class="link link-block">
                             <img class="img" src="/img/tab3.jpg" alt="">
                             <span class="link-block__arrow"></span>
