@@ -6,15 +6,25 @@
     display: grid
     grid-template-columns: calc(50% + 20px) 45%
     gap: 40px
+    @include between(1024, 1280)
+      grid-template-columns: 5fr 7fr
+      gap: 20px
+    @include max(1023)
+      grid-template-columns: 1fr
   &__address
     font: 400 25px/40px $mainFont
     color: #A8A7A6
+    @include max(767)
+      font: 400 18px/20px $mainFont
   &__price
     display: flex
     align-content: center
     justify-items: flex-start
     gap: 1em
     margin-top: 1em
+    @include max(767)
+      flex-direction: column
+      align-items: flex-start
     span:first-child
       font: 600 35px/26px $mainFont
       color: $yellow
@@ -24,6 +34,10 @@
     display: grid
     gap: 50px
     grid-template-columns: 1fr 1fr
+    @include max(767)
+      grid-template-columns: 1fr
+      gap: 0
+      margin-bottom: 1em
   &__table
     margin-top: 1em
     font: 400 16px/30px $mainFont
@@ -62,15 +76,23 @@
     display: grid
     gap: 20px
     grid-template-columns: calc(50% + 30px) calc(50% - 30px)
+    margin-top: 50px
+    @include max(1279)
+      grid-template-columns: 1fr
+      margin: 50px auto 0
+      max-width: 600px
   &__block
     background: #F9F9F8
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.15)
     padding: 25px 30px
-    margin-top: 50px
+    @include max(767)
+      padding: 15px
   &__question
     display: grid
     grid-template-columns: 1fr 240px
     gap: 20px
+    @include max(767)
+      grid-template-columns: 1fr
     &-title
       font: 600 25px/30px $mainFont
       margin-bottom: .5em
@@ -79,6 +101,8 @@
       justify-content: flex-start
       white-space: nowrap
       gap: .5em
+      @include max(767)
+        font-size: 22px
       &:after
         content: ''
         display: inline-block
@@ -90,11 +114,16 @@
       align-items: flex-start
       justify-content: center
       gap: 20px
+      @include max(767)
+        justify-content: flex-start
     &-img
       border-radius: 50%
       width: 76px
       height: 76px
       overflow: hidden
+      @include max(767)
+        width: 65px
+        height: 65px
     &-name
       white-space: nowrap
       font: 400 18px/30px $mainFont
@@ -138,6 +167,8 @@
       justify-content: flex-start
       white-space: nowrap
       gap: .5em
+      @include max(767)
+        font-size: 22px
       &:after
         content: ''
         display: inline-block
@@ -153,6 +184,8 @@
       align-content: center
       justify-content: space-between
       gap: 12px
+      @include max(767)
+        flex-direction: column
     &-item
       position: relative
       width: 100%
@@ -185,6 +218,10 @@
       display: flex
       gap: 8px
       align-content: center
+      @include max(767)
+        margin-top: 1em
+        flex-direction: column
+        gap: 15px
   &__calc
     padding: 60px 0 80px
     h3

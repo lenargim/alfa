@@ -9,6 +9,11 @@
     gap: 30px
     overflow: hidden
     position: relative
+    @include between(1024, 1280)
+      grid-template-columns: 5fr 7fr
+      gap: 20px
+    @include max(1023)
+      grid-template-columns: 1fr
   &__text
     display: grid
     grid-template-columns: 1fr
@@ -20,6 +25,8 @@
     gap: 1em
     border-bottom: 1px dashed $gray
     padding-bottom: 1em
+    @include max(767)
+      flex-direction: column
   &__right
     white-space: nowrap
     h4
@@ -31,6 +38,8 @@
     align-items: flex-start
     justify-content: space-between
     gap: 1em
+    @include max(767)
+      flex-wrap: wrap
     span
       color: $gray
     div
@@ -43,6 +52,9 @@
     align-items: center
     justify-content: flex-start
     gap: 25px
+    @include max(767)
+      flex-direction: column
+      gap: 20px
   &__slider
     position: relative
     img
@@ -76,6 +88,8 @@
           top: 50%
           left: 50%
           transform: translate(-50%,-50%)
+          @include max(767)
+            font: 600 12px/15px $mainFont
   &__arrow
     width: 24px
     height: 24px

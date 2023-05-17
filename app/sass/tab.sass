@@ -16,6 +16,8 @@
     width: fit-content
     margin: 60px auto 0
     gap: 50px
+    @include between(768, 1024)
+      gap: 25px
     @include max(767)
       margin: 30px auto 0
       flex-direction: column
@@ -36,6 +38,7 @@
       background-repeat: repeat-x
     &-item
       position: relative
+      white-space: nowrap
       &.active label
         color: $yellow
       input

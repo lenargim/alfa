@@ -14,5 +14,5 @@ $mainFont: "Proxima Nova", sans-serif
     @content
 
 @mixin between($min, $max)
-  @media screen and (min-width: $min + 'px') and (max-width: $max + 'px')
+  @media screen and (min-width: $min + 'px') and (max-width: $max - 1 + 'px')
     @content

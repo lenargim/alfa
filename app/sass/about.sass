@@ -77,6 +77,8 @@
     grid-template-columns: repeat(2, 1fr)
     gap: 30px
     margin: 50px 0 70px
+    @include max(1279)
+      grid-template-columns: 1fr
   &__item
     border-radius: 5px
     background: #F9F9F8
@@ -84,11 +86,17 @@
     align-items: center
     height: 136px
     gap: 30px
+    @include max(767)
+      flex-direction: column
+      height: auto
+      text-align: center
+      padding: 20px
     &-title
       font: 600 25px/30px $mainFont
       display: grid
       align-items: center
-      padding-right: 30px
+      @include min(768)
+        padding-right: 30px
     &-img
       border-radius: 5px
       aspect-ratio: 190/136
@@ -99,3 +107,5 @@
     grid-template-columns: repeat(3, 1fr)
     gap: 30px
     justify-items: center
+    @include max(1023)
+      grid-template-columns: 1fr

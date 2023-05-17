@@ -3,12 +3,19 @@
     display: grid
     grid-template-columns: repeat(4, 286px)
     gap: 12px
+    @include between(768, 1280)
+      grid-template-columns: 1fr 1fr
+      gap: 20px
+    @include max(767)
+      grid-template-columns: 1fr
   &__item
     background: #fff
     box-shadow: 0 0 5px #E3E1DF
     border-radius: 0 0 5px 5px
     padding: 20px
     position: relative
+    @include max(1279)
+      padding-bottom: 40px
     &-top
       display: flex
       width: 100%
@@ -80,11 +87,24 @@
     display: grid
     grid-template-columns: repeat(4, 1fr)
     gap: 18px
+    @include max(1279)
+      gap: 20px
+      overflow-x: auto
+      position: relative
+      left: -30px
+      width: calc(100% + 60px)
+      padding: 0 30px 5px
+      -ms-overflow-style: none
+      scrollbar-width: none
+      &::-webkit-scrollbar
+        display: none
   &__bank
     background: #fff
     box-shadow: 0 0 5px #E3E1DF
     border-radius: 0 0 5px 5px
     padding: 20px
+    @include max(1279)
+      min-width: 300px
     &-name
       display: flex
       align-items: center

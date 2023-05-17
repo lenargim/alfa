@@ -132,7 +132,11 @@ h3
     font-size: 25px
 
 h4
-  font: 600 30px/37px $mainFont
+  font: 600 30px/1.25 $mainFont
+  @include between(768, 1280)
+    font-size: 26px
+  @include max(767)
+    font-size: 22px
 
 table
   width: 100%
@@ -217,7 +221,6 @@ address
   font: 600 14px/17px $mainFont
   transition: all 0.2s ease
   @include max(767)
-    //&:not(.small)
     width: 100%
   img
     width: 10px
@@ -271,6 +274,12 @@ svg
 
 .heading
   font: 600 40px/52px $mainFont
+  @include between(1024, 1280)
+    font: 600 36px/46px $mainFont
+  @include between(768, 1024)
+    font: 600 32px/40px $mainFont
+  @include max(767)
+    font: 600 26px/30px $mainFont
 
 .link
   color: $yellow

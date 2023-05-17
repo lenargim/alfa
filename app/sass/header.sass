@@ -66,6 +66,12 @@
     color: #fff
     font: 600 17px/21px $mainFont
     white-space: nowrap
+    &::before
+      flex-shrink: 0
+      content: ''
+      width: 12px
+      height: 12px
+      background: url("../img/phone.png") center/contain no-repeat
   &__right
     margin-left: auto
     display: flex

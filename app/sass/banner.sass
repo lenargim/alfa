@@ -4,7 +4,9 @@
   background-repeat: no-repeat
   color: #fff
   &__price
-    font: 400 23px/36px $mainFont
+    font: 400 23px/1.7 $mainFont
+    @include max(767)
+      font-size: 18px
   &__button
     margin: 1em auto 0
 
@@ -32,11 +34,17 @@
 
 .banner_search
   padding: 47px 0 56px
+  @include between(768, 1024)
+    padding: 30px
+  @include max(767)
+    padding: 30px 0
   h1
     margin-bottom: 1em
 .banner_single
   text-align: center
   padding: 47px 0 56px
+  @include max(1023)
+    padding: 30px
   .breadcrumbs
     justify-content: center
     margin-bottom: 10px
